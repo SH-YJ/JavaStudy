@@ -1,4 +1,4 @@
 package com.Study.Data_Structure;
 
-public class BitSet {
+public class T_BitSet {
 }
