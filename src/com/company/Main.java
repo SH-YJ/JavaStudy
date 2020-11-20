@@ -13,10 +13,10 @@ public class Main {
 				String password = "syj21408";
 				conn = DriverManager.getConnection(url, username, password);
 				stmt = conn.createStatement();
-				String sql = "select * from 森萝财团 ";
+				String sql = "select * from student ";
 				rs = stmt.executeQuery(sql);
 				while (rs.next()){
-					String surl = rs.getString("名称");
+					String surl = rs.getString("姓名");
 					System.out.println(surl);
 				}
 			}catch (Exception e){

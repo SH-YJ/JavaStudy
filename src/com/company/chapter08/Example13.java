@@ -4,6 +4,8 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
+// 中文乱码 -> Run -> edit configurations -> VM options -> 添加 -Dfile.encoding=gbk
+
 /**
  * @author SH_YJ
  * @date 2020/11/16 8:28
@@ -11,7 +13,7 @@ import java.awt.event.KeyListener;
 public class Example13 {
     public static void main(String[] args) {
         Frame f = new Frame();
-        f.setSize(300,500);
+        f.setSize(300, 500);
         TextField t = new TextField();
         t.addKeyListener(new KeyListener() {
             @Override
@@ -33,7 +35,7 @@ public class Example13 {
 
             }
         });
-        f.add(t,"North");
+        f.add(t, "North");
         f.setVisible(true);
     }
 }

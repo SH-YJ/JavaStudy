@@ -6,6 +6,8 @@ import java.awt.event.MouseListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
+// 中文乱码 -> Run -> edit configurations -> VM options -> 添加 -Dfile.encoding=gbk
+
 /**
  * @author SH_YJ
  * @date 2020/11/13 8:11
@@ -13,8 +15,8 @@ import java.awt.event.WindowListener;
 public class Example06 {
     public static void main(String[] args) {
         Frame f = new Frame("卡片布局窗口");
-        f.setSize(600,400);
-        f.setLocation(300,400);
+        f.setSize(600, 400);
+        f.setLocation(300, 400);
         f.addWindowListener(new WindowListener() {
             @Override
             public void windowOpened(WindowEvent e) {
@@ -85,12 +87,12 @@ public class Example06 {
         });
         control.add(btn1);
         control.add(btn2);
-        Label l1 = new Label("这是一个卡片",Label.CENTER);
-        Label l2 = new Label("这是一个卡片",Label.LEFT);
+        Label l1 = new Label("这是一个卡片", Label.CENTER);
+        Label l2 = new Label("这是一个卡片", Label.LEFT);
         content.setLayout(c);
         content.add(l1);
         content.add(l2);
-        f.add(control,"North");
+        f.add(control, "North");
         f.add(content);
         f.setVisible(true);
     }

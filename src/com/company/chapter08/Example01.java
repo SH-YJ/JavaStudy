@@ -4,6 +4,8 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
+// 中文乱码 -> Run -> edit configurations -> VM options -> 添加 -Dfile.encoding=gbk
+
 /**
  * @author SH_YJ
  * @date 2020/11/12 16:12
@@ -11,9 +13,9 @@ import java.awt.event.MouseListener;
 public class Example01 {
     public static void main(String[] args) {
         Frame f = new Frame("流式布局");
-        f.setSize(400,400);
+        f.setSize(400, 400);
         f.setResizable(false);
-        f.setLocation(300,200);
+        f.setLocation(300, 200);
         f.setLayout(new FlowLayout());
         Button btn = new Button("Click");
         btn.addMouseListener(new MouseListener() {

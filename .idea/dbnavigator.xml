@@ -23,11 +23,15 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="false" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="af12db75-efed-4a67-9536-d5b220fa75e1">
+        <schema name="url" object-types="table, view" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="af12db75-efed-4a67-9536-d5b220fa75e1">
-      <console name="Connection 1" type="STANDARD" schema="url" session="Main"><![CDATA[select * from 森萝财团;]]></console>
+      <console name="Connection 1" type="STANDARD" schema="url" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
