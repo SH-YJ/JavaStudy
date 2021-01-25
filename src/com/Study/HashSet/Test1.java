@@ -13,8 +13,7 @@ public class Test1 {
         set.add("b");
         set.add("c");
         System.out.println(set.contains("a"));
-        for (String str :
-                set) {
+        for (String str : set) {
             System.out.println(str);
         }
     }

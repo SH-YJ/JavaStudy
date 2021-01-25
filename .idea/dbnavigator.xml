@@ -25,13 +25,13 @@
     <show-object-properties value="false" />
     <loaded-nodes>
       <connection connection-id="af12db75-efed-4a67-9536-d5b220fa75e1">
-        <schema name="url" object-types="table, view" />
+        <schema name="url" object-types="view, table" />
       </connection>
     </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="af12db75-efed-4a67-9536-d5b220fa75e1">
-      <console name="Connection 1" type="STANDARD" schema="url" session="Main" />
+      <console name="Connection 1" type="STANDARD" schema="url" session="Main"><![CDATA[select * from student;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">

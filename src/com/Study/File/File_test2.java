@@ -1,6 +1,7 @@
 package com.Study.File;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
 public class File_test2 {
     public static void main(String[] args) throws Exception{
@@ -8,7 +9,7 @@ public class File_test2 {
         FileOutputStream fop = new FileOutputStream(f);
         // 构建FileOutputStream对象,文件不存在会自动新建
 
-        OutputStreamWriter writer = new OutputStreamWriter(fop, "UTF-8");
+        OutputStreamWriter writer = new OutputStreamWriter(fop, StandardCharsets.UTF_8);
         // 构建OutputStreamWriter对象,参数可以指定编码,默认为操作系统默认编码,windows上是gbk
 
         writer.append("中文输入");
@@ -29,13 +30,13 @@ public class File_test2 {
         FileInputStream fip = new FileInputStream(f);
         // 构建FileInputStream对象
 
-        InputStreamReader reader = new InputStreamReader(fip, "UTF-8");
+        InputStreamReader reader = new InputStreamReader(fip, StandardCharsets.UTF_8);
         // 构建InputStreamReader对象,编码与写入相同
 
-        StringBuffer sb = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         while (reader.ready()) {
             sb.append((char) reader.read());
-            // 转成char加到StringBuffer对象中
+            // 转成char加到StringBuilder对象中
         }
         System.out.println(sb.toString());
         reader.close();
